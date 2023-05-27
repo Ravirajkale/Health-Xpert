@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1"
+    tools:context=".BuyMedicineDetailsActivity">
+
+  <TextView
+      android:id="@+id/textviewBMDName"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Health-Xpert"
+      android:textColor="@color/purple_200"
+      android:textSize="34sp"
+      android:textStyle="bold"
+
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.483"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.01" />
+
+  <TextView
+      android:id="@+id/textviewBMDTitle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Deliver Location:Solapur"
+      android:textColor="@color/white"
+      android:textSize="16sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textviewBMDName"
+      app:layout_constraintVertical_bias="0.032" />
+
+  <TextView
+      android:id="@+id/textviewBMDPackage"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Lab Test and Packages"
+      android:textColor="@color/yellow"
+      android:textSize="20dp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textviewBMDTitle"
+      app:layout_constraintVertical_bias="0.036" />
+
+  <EditText
+      android:id="@+id/editTextBMDMultiLine"
+      android:layout_width="350dp"
+      android:layout_height="450dp"
+      android:layout_margin="10dp"
+      android:editable="false"
+      android:gravity="start|top"
+      android:inputType="textMultiLine"
+      android:padding="10dp"
+      android:text="Hi \n Hello"
+      android:textColor="@color/colorWhite"
+      android:textSize="20sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.551"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textviewBMDPackage"
+      app:layout_constraintVertical_bias="0.0" />
+
+  <Button
+      android:id="@+id/buttonBMDBack"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="24dp"
+      android:backgroundTint="#8BC34A"
+      android:text="Back"
+      android:textSize="20dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.91"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <Button
+      android:id="@+id/buttonBMDGotoCart"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="24dp"
+      android:backgroundTint="#8BC34A"
+      android:text="ADD TO CART"
+      android:textSize="16dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.145"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <TextView
+      android:id="@+id/textViewBMDTotalCost"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Total Cost:"
+      android:textColor="@color/colorWhite"
+      android:textSize="20sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.54"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editTextBMDMultiLine" />
+</androidx.constraintlayout.widget.ConstraintLayout>

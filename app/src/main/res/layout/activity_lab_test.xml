@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    tools:context=".LabTestActivity">
+
+  <TextView
+      android:id="@+id/textviewLTDName"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Health-Xpert"
+      android:textColor="@color/purple_200"
+      android:textSize="34sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.483"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.01" />
+
+  <TextView
+      android:id="@+id/textviewLTDTitle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Deliver Location:Solapur"
+      android:textColor="@color/white"
+      android:textSize="16sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textviewLTDName"
+      app:layout_constraintVertical_bias="0.032" />
+
+  <TextView
+      android:id="@+id/textviewLDPackage"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Lab Test and Packages"
+      android:textColor="@color/yellow"
+      android:textSize="20dp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textviewLTDTitle"
+      app:layout_constraintVertical_bias="0.036" />
+
+  <ListView
+      android:id="@+id/listViewCl"
+      android:layout_width="350dp"
+      android:layout_height="450dp"
+      android:layout_margin="10dp"
+      android:layout_marginStart="16dp"
+
+      android:layout_marginEnd="16dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.482"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textviewLDPackage"
+      app:layout_constraintVertical_bias="0.29" />
+
+  <Button
+      android:id="@+id/buttonODBack"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="24dp"
+      android:backgroundTint="#8BC34A"
+      android:text="Back"
+      android:textSize="20dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.91"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <Button
+      android:id="@+id/buttonLTDGotoCart"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="24dp"
+      android:backgroundTint="#8BC34A"
+      android:text="GO TO CART"
+      android:textSize="16dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.145"
+      app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
